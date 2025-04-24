@@ -1,6 +1,6 @@
 # Winget.lnk
 
-A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.microsoft.com/windows/package-manager/winget/). No installation, no nonsense.
+A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.microsoft.com/windows/package-manager/winget/). No nonsense. 
 
 **Easy for beginners, family and friends. Convenient for power users. Just 4 KB in size.**
 
@@ -8,7 +8,7 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 > **Alice:** "winget upgrade" is two words! I don't need a shortcut for that!
 
-> **Bob:** The shortcut is a visual reminder, a nudge, to occasionally check for updates. Beginners don’t need to remember any command prompts. Power users get a convenient custom prompt option. 
+> **Bob:** The shortcut is a visual reminder, a nudge, to occasionally check for updates. Beginners don’t need to remember any command prompts. Power users conveniently switch to custom prompts. 
 
 - **For Everyone:** Not everyone is tech-savvy. It helps you, family, and friends stay updated.
 - **Shareable:** Create once, share anywhere. Copy it to a flash drive or send it via Email or a messenger.
@@ -18,9 +18,9 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 ![Basic Demo](images/Demo-Yes.gif)
 
-## How to create Winget.lnk?
+## How to create Winget.lnk in under 30s?
 
-> Create the shortcut on your own in less than 30s.
+> The **creation script** creates a **winget.lnk** shortcut on the **Desktop**. It assigns **PowerShell as the target**, and icon 46 from **shell32.dll**. 
 
 1. **Copy** the following script
    ```powershell
@@ -32,7 +32,7 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
        $shortcut.Save()
    }
 
-2. Press `Win + X`, then select **Windows PowerShell (Terminal)** from the menu. 
+2. Press `Win + X`, then select **Windows PowerShell** or **Terminal** from the menu. 
 
 3. **Paste (Right-Click)** the copied script into your **PowerShell** window. **Confirm** the multi-line warning. **Close** the window afterwards.
    
@@ -40,7 +40,6 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 ## Technical info
 
-> The **creation script** creates a **winget.lnk** shortcut on the **Desktop**. It assigns **PowerShell as the target**, and icon 46 from [**shell32.dll**](https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/ExtractIconEx/shell32.html). 
 
 The shortcut itself runs the following command in PowerShell:
 
