@@ -4,26 +4,45 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 **Easy for beginners, family and friends. Convenient for power users. Just 4 KB in size.**
 
-## Why Winget.lnk?
+## Why use Winget.lnk?
 
-- **Zero Nonsense:** No installation, no background processes, no notifications, no third-party tools.
-- **Full Control:** No autostart, no scheduling, no interruptions — run it when you want.
-- **Secure and Fast:** No explicit admin rights required, no execution policy changes, no browser interaction.
+> **Alice:** "winget upgrade" is two words! I don't need a shortcut for that!
 
-## Thought Process
+> **Bob:** The shortcut is a visual reminder, a nudge, to occasionally check for updates. Beginners don’t need to remember any command prompts. Power users get a convenient custom prompt option. 
 
-**Q: _"winget upgrade" is two words! I don't need a shortcut for that!_**  
-**A:** The shortcut is a visual reminder to occasionally check for updates. Beginners don’t need to remember any command prompts, and power users get a convenient custom prompt option.
-
-## How to Use
-
-Simply **[download Winget.lnk](https://raw.githubusercontent.com/jcoester/winget.lnk/main/winget.lnk)**. Pin it to your **Desktop, Taskbar, or Start menu**. Run it **on demand**.
+- **For Everyone:** Not everyone is tech-savvy. It helps you, family and friends stay updated.
+- **Shareable:** Create once, share anywhere. Use a flash drive, email, or a messenger to transfer it to another computer.
+- **Safe and Secure:** No explicit admin rights required, no execution policy changes, no browser interaction.
+- **Full Control:** No autostart, no scheduling, no interruptions — you decide when to run.
+- **Zero Nonsense:** No third-party tools, no background processes, no notifications.
 
 ![Basic Demo](images/Demo-Yes.gif)
 
-## How It Works
+## How to create Winget.lnk?
 
-*The shortcut runs the following command in PowerShell:*
+> Providing a simple download comes with issues. I recommend creating the shortcut on your own in 30s.
+
+1. **Copy** the following script
+   ```powershell
+   New-Object -ComObject WScript.Shell | ForEach-Object {
+       $shortcut = $_.CreateShortcut([System.Environment]::GetFolderPath('Desktop') + '\winget.lnk')
+       $shortcut.TargetPath = 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe'
+       $shortcut.Arguments = '-NoExit -Command "winget upgrade; Write-Host ''''; $i = Read-Host ''Upgrade all packages? (Y/N)''; if ($i -match ''^[Yy]$'') { winget upgrade --all } else { Write-Host '''' }"'
+       $shortcut.IconLocation = '%SystemRoot%\System32\shell32.dll,46'
+       $shortcut.Save()
+   }
+
+2. Press `Win + X`, then select **Terminal** from the menu. 
+
+3. **Paste (Right-Click)** the copied script into your **PowerShell** window. **Confirm** the multi-line warning. **Close** the window afterwards.
+   
+4. Once the shortcut is created, you can optionally pin it to your **Taskbar or Start Menu** for easy access. Run it **on Demand**.
+
+## Technical info
+
+> The **creation script** creates a **winget.lnk** shortcut on the **Desktop**. It assigns **PowerShell as the target**, and icon 46 from [**shell32.dll**](https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/ExtractIconEx/shell32.html). 
+
+The shortcut itself runs the following command in PowerShell:
 
 ```powershell
 -NoExit -Command "
@@ -38,4 +57,4 @@ Simply **[download Winget.lnk](https://raw.githubusercontent.com/jcoester/winget
 
 ![Custom Demo](images/Demo-No.gif)
 
-Made for all no-nonsense lovers ❤️
+Made with ❤️ for simplicity.
