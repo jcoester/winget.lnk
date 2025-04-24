@@ -10,8 +10,8 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 > **Bob:** The shortcut is a visual reminder, a nudge, to occasionally check for updates. Beginners don’t need to remember any command prompts. Power users get a convenient custom prompt option. 
 
-- **For Everyone:** Not everyone is tech-savvy. It helps you, family and friends stay updated.
-- **Shareable:** Create once, share anywhere. Use a flash drive, email, or a messenger to transfer it to another computer.
+- **For Everyone:** Not everyone is tech-savvy. It helps you, family, and friends stay updated.
+- **Shareable:** Create once, share anywhere. Copy it to a flash drive or send it via Email or a messenger.
 - **Safe and Secure:** No explicit admin rights required, no execution policy changes, no browser interaction.
 - **Full Control:** No autostart, no scheduling, no interruptions — you decide when to run.
 - **Zero Nonsense:** No third-party tools, no background processes, no notifications.
@@ -20,7 +20,7 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 ## How to create Winget.lnk?
 
-> Providing a simple download comes with issues. I recommend creating the shortcut on your own in 30s.
+> Create the shortcut on your own in less than 30s.
 
 1. **Copy** the following script
    ```powershell
