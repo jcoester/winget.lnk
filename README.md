@@ -32,7 +32,7 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
        $shortcut.Save()
    }
 
-2. Press `Win + X`, then select **Terminal** from the menu. 
+2. Press `Win + X`, then select **Windows PowerShell (Terminal)** from the menu. 
 
 3. **Paste (Right-Click)** the copied script into your **PowerShell** window. **Confirm** the multi-line warning. **Close** the window afterwards.
    
