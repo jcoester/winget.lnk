@@ -1,6 +1,6 @@
 # Winget.lnk
 
-A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.microsoft.com/windows/package-manager/winget/). *No nonsense. Just 4 KB.*
+A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.microsoft.com/windows/package-manager/winget/). *No nonsense. Just 4 KB in size.*
 
 ## Why use Winget.lnk?
 
