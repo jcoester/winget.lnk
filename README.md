@@ -25,7 +25,7 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 ## Create Winget.lnk in Under 30 Seconds
 
-> The **creation script** creates a **winget.lnk** shortcut on the **Desktop**. It assigns **PowerShell as the target**, and icon 46 from **shell32.dll**. 
+> This **creation script** creates a **winget.lnk** shortcut on the **Desktop**. It assigns **PowerShell as the target**, and [icon 46](https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/ExtractIconEx/shell32.html) from **shell32.dll**. 
 
 1. **Copy** the following script
    ```powershell
