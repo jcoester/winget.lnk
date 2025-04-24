@@ -25,7 +25,7 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 ## Create Winget.lnk in Under 30 Seconds
 
-> This **creation script** creates a **winget.lnk** shortcut on the **Desktop**. It assigns **PowerShell as the target**, and [icon 46](https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/ExtractIconEx/shell32.html) from **shell32.dll**. 
+> This **script** creates a **winget.lnk** shortcut on the **Desktop**. It assigns **PowerShell as target**, and [icon 46](https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/ExtractIconEx/shell32.html) from **shell32.dll**. 
 
 1. **Copy** the following script
    ```powershell
@@ -37,11 +37,11 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
        $shortcut.Save()
    }
 
-2. Press `Win + X`, then select **Windows PowerShell** or **Terminal** from the menu. 
+2. Press `Win + X`, then select **Windows PowerShell** / **Terminal** from the menu. 
 
 3. **Paste (Right-Click)** the copied script into your **PowerShell** window. **Confirm** the multi-line warning. **Close** the window afterwards.
    
-4. Once the shortcut is created, you can optionally pin it to your **Taskbar or Start Menu** for easy access. Run it **on Demand**.
+4. (Optional) Once the shortcut is created, you can pin it to your **Taskbar or Start Menu** for easy access. Run it **on Demand**.
 
 ## Technical info
 
