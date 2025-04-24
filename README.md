@@ -19,7 +19,7 @@ A simple shortcut to quickly upgrade your apps using [**winget**](https://learn.
 
 Simply **[download Winget.lnk](https://raw.githubusercontent.com/jcoester/winget.lnk/main/winget.lnk)**. Pin it to your **Desktop, Taskbar, or Start menu**. Run it **on demand**.
 
-![Basic Demo](Demo-Yes.gif)
+![Basic Demo](images/Demo-Yes.gif)
 
 ## How It Works
 
@@ -36,6 +36,6 @@ Simply **[download Winget.lnk](https://raw.githubusercontent.com/jcoester/winget
     }"
 ```
 
-![Custom Demo](Demo-No.gif)
+![Custom Demo](images/Demo-No.gif)
 
 Made for all no-nonsense lovers ❤️
